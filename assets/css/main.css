@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pattern {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: radial-gradient(#ffd3d5 1.25px, #ffffff 1.25px);
+  background-size: 25px 25px;
+  background-repeat: repeat;
+}
+
+.main-selection {
+  @apply selection:bg-primary-500 selection:text-white;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
