@@ -1,6 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  generate: {
+    fallback: true,
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -43,8 +46,21 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    meta: {
+      name: "Pet Adoption",
+      author: "Behon Baker",
+      description: "Make a new friend today at Pet Adoption",
+      theme_color: "#c23a40",
+      ogTitle: "Pet Adoption",
+      twitterCard: "summary_large_image",
+      twitterCreator: "@iAm_BayBreezy",
+    },
     manifest: {
       lang: "en",
+      name: "Pet Adoption",
+      short_name: "Pet Adoption",
+      description: "Make a new friend today at Pet Adoption",
+      theme_color: "#c23a40",
     },
   },
 
